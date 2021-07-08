@@ -10,17 +10,19 @@ const UserCard = ({ user }) => {
         height="150"
         width="150"
         className="img rounded-circle img-thumbnail"
+        alt="aman"
       />
       <CardTitle>
-        <h3 className="text-dark">{user.name}</h3>
+        <h3 className="name">{user.name}</h3>
       </CardTitle>
       <CardText>
-        <h6 className="text-dark">Location: {user.location}</h6>
-        <h6 className="text-dark">{user.bio}</h6>
-        <h6 className="text-dark">
+        <h6 className="content">Location: {user.location}</h6>
+        <h6 className="content">{user.bio}</h6>
+        <h6 className="content">
           Available for Hire : {user.hireable ? "YUP!!" : "NOPE!!"}
         </h6>
-        <h6 className="text-dark">Followers : {user.followers}</h6>
+        <h6 className="content">Followers : {user.followers}</h6>
+        <a className="visit" href={user.html_url}>Visit Profile</a>
       </CardText>
       </CardBody>
     </Card>

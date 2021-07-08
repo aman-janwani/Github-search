@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Axios from 'axios';
-import {ListGroup, ListGroupItem , NavLink} from 'reactstrap';
-import { Link } from "react-router-dom";
+import {ListGroup, ListGroupItem } from 'reactstrap';
 
 const Repos = ({repos_url}) => {
     const [repos, setRepos] = useState([]);
@@ -17,9 +16,9 @@ const Repos = ({repos_url}) => {
 
     return (
         <ListGroup className="repos">
-            {repos.map(repo => (
+            {repos.map((repo,index) => (
                 <ListGroupItem key={repo.id}>
-                    <a href={repo.html_url}>{repo.name}</a>
+                    <span>{index} :- </span><a className="a" href={repo.html_url}>{repo.name}</a>
                     <div className="text-secondary">{repo.language}</div>
                     <div className="text-secondary">{repo.description}</div>
                 </ListGroupItem>

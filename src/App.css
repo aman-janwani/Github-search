@@ -13,6 +13,7 @@
 .repos{
   height: 500px;
   overflow: scroll;
+  font-family: sans-serif;
 }
 .App {
   min-height: 100vh;
@@ -34,5 +35,41 @@
 }
 a{
   text-decoration: none !important;
- font-size: 20px;
+}
+.a{
+  font-size: 20px;
+  color: #03045e;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.visit{
+  font-size: 18px;
+  color: #03045e;
+  font-weight: 600;
+  font-family: monospace;
+}
+.cardbody{
+  background: #343a40;
+  color: white;
+}
+.form{
+  background: #212529;
+  color: white;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+.name{
+  color: #03045e;
+  font-family: sans-serif;
+}
+.content{
+  color: #023e8a;
+  font-family: sans-serif;
+}
+span{
+  font-size: 17px;
+  color: #03045e;
+  font-weight: 600;
+  font-family: sans-serif;
 }

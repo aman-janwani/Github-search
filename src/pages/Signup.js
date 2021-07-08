@@ -53,10 +53,10 @@ function Signup() {
       <Row>
         <Col lg={6} className="offset-lg-3 mt-5">
           <Card>
-            <Form onSubmit={handleSubmit}>
+            <Form className="form" onSubmit={handleSubmit}>
               <CardHeader className="">Sign Up here</CardHeader>
-              <CardBody>
-                <FormGroup row>
+              <CardBody className="cardbody">
+                <FormGroup row className="m-4">
                   <Label for="email" sm={3}>
                     Email
                   </Label>
@@ -71,7 +71,7 @@ function Signup() {
                     />
                   </Col>
                 </FormGroup>
-                <FormGroup row>
+                <FormGroup row className="m-4">
                   <Label for="password" sm={3}>
                     Password
                   </Label>
